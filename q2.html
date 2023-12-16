@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var a = 55;
+
+        if (a % 5 == 0) {
+            if (a % 11 == 0)
+                document.write("divideable by 11");
+        } else {
+            document.write("divideable by 5");
+        }
+
+        var i = 0;
+
+        for (i = 0; i <= 20; i++) {
+            if (i % 2 == 0) {
+                document.write(i + "<br>");
+            }
+        }
+
+        var i = 50;
+
+        for (i = 50; i >= 0; --i) {
+            document.write(i + "<br>");
+        }
+
+        for (i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                document.write("$");
+            } else {
+                document.write("*");
+            }
+        }
+
+        for (i = 1; i <= 10; i++) {
+            if (i == 10) {
+                document.write(i + "=");
+            } else {
+                document.write(i + "+");
+            }
+        }
+        //1
+        for (i = 1; i <= 5; i++) {
+            document.write("*");
+        }
+        //2
+        for (i = 1; i <= 5; i++) {
+            if (i == 3) {
+                document.write("$");
+            } else {
+                document.write("*");
+            }
+        }
+        //3
+        for (i = 1; i <= 5; i++) {
+            if (i == 1 || i == 5) {
+                document.write("$");
+            } else {
+                document.write("*");
+            }
+        }
+        //4
+        for (i = 0; i <= 5; i++) {
+            if (i % 2 == 0) {
+                document.write("$");
+            } else {
+                document.write("*");
+            }
+        }
+
+        //5
+
+        for (i = 1; i <= 5; i++) {
+            document.write(i);
+        }
+
+        //6
+        for (i = 5; i >= 1; --i) {
+            document.write(i);
+        }
+        //7
+        for (i = 1; i <= 5; i++) {
+            document.write(i * 10);
+        }
+        //8
+        for (i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                document.write(i);
+            }
+        }
+
+        //9
+
+        for (i = 1; i <= 10; i++) {
+            if (i % 2 !== 0) {
+                document.write(i);
+            }
+        }
+
+
+        //10
+        for (i = 1; i <= 6; i++) {
+            if (i % 2 == 0) {
+                document.write("*");
+            } else {
+                document.write(i);
+            }
+        }
+
+        //11
+        for (i = 1; i <= 5; i++) {
+            if (i == 5) {
+                document.write(i + "=");
+            } else {
+                document.write(i + "*");
+            }
+        }
+        //12
+        for (i = 1; i <= 5; i++) {
+            document.write(i * i);
+        } document.write("<br>");
+
+        //13
+        for (i = 1; i <= 5; i++) {
+            if (i % 2 == 0) {
+                document.write(i + "!" + "+");
+            } else {
+                document.write(i + "!" + "+");
+            }
+        }
+
+        //14
+        for (i = 1; i <= 5; i++) {
+            if (i == 5) {
+                document.write(i + "=");
+            } else {
+                document.write(i + "+");
+            }
+        }
+
+
+        //15
+        for (i = 1; i <= 6; i++) {
+            if (i == 6) {
+                document.write(i + "=");
+            } else if (i % 2 != 0) {
+                document.write(i + "-");
+            } else {
+                document.write(i + "+");
+            }
+        }
+        document.write("<br>");
+        for (i = 1; i <= 6; i++) {
+            if (i % 2 != 0) {
+                document.write(i + "-");
+            } else {
+                document.write(i + "+");
+            }
+        } document.write(".......N=");
+
+        //16
+        for (i = 1; i <= 6; i++) {
+            if (i == 6) {
+                document.write("=");
+            } else if (i + 1) {
+                document.write("1/" + i + "+");
+            } else {
+                document.write("+");
+            }
+        }
+
+        //17
+        for (i = 1; i <= 7; i++) {
+            if (i == 7) {
+                document.write("-" + "......N=");
+            } else if (i % 2 == 0) {
+                document.write("+" + i);
+            } else {
+                document.write("-" + i);
+            }
+        }
+
+        //------------------------------------------------------------------------------------------
+
+        //2D pattern
+
+        //1
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        //2
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                if (i && j == 3) {
+                    document.write("$");
+                } else {
+                    document.write("*");
+                }
+            } document.write("<br>");
+        }
+        //3
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                if (i && j == 1) {
+                    document.write("$");
+                } else if (i && j == 5) {
+                    document.write("$");
+                } else {
+                    document.write("*");
+                }
+            } document.write("<br>");
+        }
+        //4
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i == 3) {
+                    document.write("$");
+                } else {
+                    document.write("*");
+                }
+            }
+            document.write("<br>");
+        }
+        //5
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (j == 1 || j == column || i == 1 || i == row) {
+                    document.write("*");
+                } else {
+                    document.write(" &nbsp;");
+                }
+            } document.write("<br>");
+        }
+        //6
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i == 1 || j == 1 || i == 5 || j == 5 || i == j) {
+                    document.write("*");
+                } else {
+                    document.write(" &nbsp;");
+                }
+            } document.write("<br>");
+        }
+
+        //7
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i == j) {
+                    document.write("$")
+                } else {
+                    document.write("*");
+                }
+            } document.write("<br>");
+        }
+
+        //8
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i == 1 && j == 5 || i == 2 && j == 4 || i == 3 && j == 3 || i == 4 && j == 2 || i == 5 && j == 1) {
+                    document.write(" $ ")
+                } else {
+                    document.write(" * ");
+                }
+            } document.write("<br>");
+        }
+
+        //9
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i == 1 && j == 1 || i == 2 && j == 2 || i == 3 && j == 3 || i == 4 && j == 4 || i == 5 && j == 5 || i == 5 && j == 1 || i == 4 && j == 2 || i == 2 && j == 4 || i == 1 && j == 5) {
+                    document.write(" $ ")
+                } else {
+                    document.write(" * ");
+                }
+            } document.write("<br>");
+        }
+
+        //10
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i == 1 && j == 3 || i == 2 && j == 3 || i == 3 && j == 3 || i == 3 && j == 1 || i == 3 && j == 2 || i == 3 && j == 4 || i == 3 && j == 5 || i == 4 && j == 3 || i == 5 && j == 3) {
+                    document.write(" $ ");
+                } else {
+                    document.write(" * ");
+                }
+            } document.write("<br>");
+        }
+
+        //11
+
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i + 1) {
+                    document.write(i);
+                }
+            } document.write("<br>");
+        }
+
+        //12
+
+        var row = 5;
+        var column = 7;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (j % 2 !== 0) {
+                    document.write(j);
+                } else {
+                    document.write(" ");
+                }
+            } document.write("<br>");
+        }
+
+        //13
+
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i == j) {
+                    document.write(i);
+                } else {
+                    document.write(j);
+                }
+            } document.write("<br>");
+        }
+
+        //14
+
+        var num = ""
+        var count = 25;
+
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                num += Number.fromCharCode(count) + " ";
+                count++
+            } document.write("<br>");
+        }
+
+        //15
+
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (j % 2 !== 0) {
+                    document.write("1");
+                } else {
+                    document.write("0");
+                }
+            } document.write("<br>");
+        }
+
+        //16
+
+        var row = 6;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if (i % 2 !== 0) {
+                    document.write("1");
+                } else {
+                    document.write("0");
+                }
+            } document.write("<br>");
+        }
+
+        //17
+
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= row; i++) {
+            for (j = 1; j <= column; j++) {
+                if ((i + j) % 2 == 0) {
+                    document.write("1");
+                } else {
+                    document.write("0");
+                }
+            } document.write("<br>");
+        }
+
+        //18
+
+        var row = 5;
+        var column = 5;
+
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                if (i == 1 && j == 1 || i == 1 && j == 5 || i == 2 && j == 1 || i == 2 && j == 5 || i == 3 && j == 1 || i == 3 && j == 5 || i == 4 && j == 1 || i == 4 && j == 5 || i == 5 && j == 1 || i == 5 && j == 5) {
+                    document.write("*");
+                } else {
+                    document.write(j);
+                }
+            } document.write("<br>");
+        }
+
+        //19
+
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                if (i !== j) {
+                    document.write(j);
+                }
+            } document.write("<br>");
+        }
+
+        //20
+        var row = 5;
+        var column = 5;
+
+        for (i = 0; i <= 4; i++) {
+            for (j = 1; j <= 5; j++) {
+                document.write(i + j);
+            } document.write("<br>");
+        }
+
+
+        //21
+
+        //22
+
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(" * ");
+            } document.write("<br>");
+        }
+
+        //23
+
+        for (i = 5; i >= 1; i--) {
+            for (j = 1; j <= i; j++) {
+                document.write(" * ");
+            } document.write("<br>");
+        }
+
+        //24
+
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(j);
+            } document.write("<br>");
+        }
+
+        //25
+
+        for (i = 5; i >= 1; i--) {
+            for (j = 1; j <= i; j++) {
+                document.write(j);
+            } document.write("<br>");
+        }
+
+        //26
+        for (i = 1; i <= 9; i++) {
+            for (j = 1; j <= i; j++) {
+                if (j % 2 !== 0) {
+                    document.write(j);
+                }
+            } document.write("<br>");
+        }
+
+        //27
+
+        for (i = 5; i >= 1; i--) {
+            for (j = 5; j >= i; j--) {
+                document.write(i = j + 1);
+            } document.write("<br>");
+        }
+
+        //28
+        for (i = 5; i >= 1; i--) {
+            for (j = 5; j >= i; j--) {
+                document.write(j + " ");
+            } document.write("<br>");
+        }
+
+        //29
+
+        for (i = 1; i <= 5; i++) {
+            for (j = i; j >= 1; j--) {
+                document.write(j);
+            } document.write("<br>");
+        }
+
+
+        //30
+
+        for (i = 1; i <= 5; i++) {
+            for (j = i; j <= 5; j++) {
+                document.write(j);
+            } document.write("<br>");
+        }
+
+        //31
+
+        for (i = 5; i >= 1; i--) {
+            for (j = i; j >= 1; j--) {
+                document.write(j);
+            } document.write("<br>");
+        }
+
+        //32
+
+        for (i = 5; i >= 1; i--) {
+            for (j = i; j <= 5; j++) {
+                document.write(j);
+            } document.write("<br>");
+        }
+
+        // 33
+
+        for (i = 9; i >= 1; i = i - 2) {
+            for (j = i; j >= 1; j--) {
+                if (j % 2 !== 0) {
+                    document.write(j);
+                }
+            } document.write("<br>");
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
